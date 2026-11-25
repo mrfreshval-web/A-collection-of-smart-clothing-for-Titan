@@ -1,0 +1,53 @@
+# Источники к «Северной звезде» и тех-документам 06–08
+
+> **Версия:** v0.1 · **Дата:** 2026-11-25 · Используются в [north-star.md](north-star.md), [path-to-north-star.md](path-to-north-star.md), [../04-tech/06-advanced-materials.md](../04-tech/06-advanced-materials.md), [../04-tech/07-cooling-and-ventilation.md](../04-tech/07-cooling-and-ventilation.md), [../04-tech/08-smart-hanger.md](../04-tech/08-smart-hanger.md).
+> Ссылки вида **[S№]** ведут в [../04-tech/99-sources.md](../04-tech/99-sources.md) (PR отдела «Технологии»), ссылки вида **[N№]** — сюда.
+> Пометка «прочитана аннотация» означает, что полный текст за платным доступом; цифры взяты только из доступной части.
+
+## Терморегуляция человека и точечное охлаждение
+
+- **[N1]** Iwahashi M., Chaen Y., Yanaoka T. и др. *Front. Physiol.* 2023;14:1143447. Охлаждение кистей и предплечий водой 15–17 °C в перерыве (≈14 мин), 33 °C, 50 % RH, n = 11: ректальная температура −0,54 ± 0,17 °C к контролю, средняя температура кожи −1,86 °C, мощность во второй половине выше (596 против 561 Вт). https://pmc.ncbi.nlm.nih.gov/articles/PMC10285063/
+- **[N2]** LITFL, «Palm cooling, effective or not?» Обзор 9 работ PubMed: 5 положительных, 4 отрицательных; две положительные — авторов патента; Kuennen 2009: −0,35 °C ядра, слабее погружения в холодную воду и жидкостных костюмов. https://litfl.com/palm-cooling-effective-or-not/
+- **[N3]** Tyler C.J., Sunderland C. *Cooling the neck region during exercise in the heat.* J. Athl. Train. 2011. https://pubmed.ncbi.nlm.nih.gov/21214352/ — текст не прочитан (защита сайта); вывод в документах дан как **[Гипотеза: сверить]**.
+- **[N4]** Sunderland C., Stevens R., Everson B., Tyler C.J. *Neck-cooling improves repeated sprint performance in the heat.* Front. Physiol. 2015;6:314. n = 7, 33 °C: ядро без разницы (p = 0,15), ощущение на шее холоднее, средняя мощность спринтов 540 против 507 Вт (p = 0,01). https://pmc.ncbi.nlm.nih.gov/articles/PMC4633514
+- **[N5]** Hashimoto K. и др. *Sci. Rep.* 2021;11:21269. 40 °C, 50 % RH, n = 9: ректальная температура в конце нагрузки 38,01 (контроль), 37,72 (жилет с водой 10 °C), 37,54 °C (куртка с вентиляторами Kuchofuku, 2 × 10 см, 30 л/с, 4 батарейки АА); ЧСС 157 → 137 уд/мин. https://pmc.ncbi.nlm.nih.gov/articles/PMC8553827
+- **[N6]** Tokizawa K. *Front. Physiol.* 2023;14:1122504. 37 °C, n = 16 (молодые и пожилые): рост ректальной температуры 1,3 °C без вентилятора, 1,1 °C с вентилятором и сухой футболкой, 0,7 °C с вентилятором и увлажнённой футболкой. https://www.frontiersin.org/articles/10.3389/fphys.2023.1122504/full
+- **[N7]** WIPO IP Advantage, *KUCHOFUKU Cooling Fashion*, обновлено 10.06.2026: рынок одежды с вентиляторами в Японии — «миллионы единиц» и «десятки миллиардов иен»; 85 заявок PCT. https://www.wipo.int/ja/web/ip-advantage/w/stories/kuchofuku-cooling-fashion
+- **[N14]** Luo M., Wang Z., Zhang H., Arens E., Filingeri D. и др. *High-density thermal sensitivity maps of the human body.* Building and Environment, 2019/2020. 318 точек; кожа на охлаждение чувствительнее, чем на нагрев, в 1,3–1,6 раза; щёки, задняя поверхность шеи и ягодицы в 2–3 раза чувствительнее среднего; стопа, голень и верх груди — заметно ниже среднего. https://escholarship.org/content/qt3kq5p62q/qt3kq5p62q.pdf
+- **[N15]** Nakamura M. и др. *Relative importance of different surface regions for thermal comfort in humans.* Eur. J. Appl. Physiol. 2013;113:63–76 (прочитана аннотация): в жару человек предпочитает прохладное лицо, в холод — тёплый живот; воздействие на конечности даёт слабое ощущение комфорта. https://doi.org/10.1007/s00421-012-2406-9
+- **[N16]** Wang Z., Warren K., Luo M. и др. *Evaluating the comfort of thermally dynamic wearable devices.* Building and Environment, 2020 (прочитана аннотация). Запястное устройство 6,25 см², ≈1 Вт, n = 49, 20–28 °C: «корректирующий потенциал» 2,5 °C за 3 мин, до 3,3 °C при самостоятельной настройке. https://escholarship.org/uc/item/7rf7z7k1
+- **[N35]** Wareable, обзор Embr Wave: сеансы 3–35 мин, ≈10–30 сеансов на заряд в зависимости от интенсивности. https://www.wareable.com/wearable-tech/embr-wave-review-7249
+
+## Носимые охладители и твердотельные технологии
+
+- **[N8]** Sony UK, REON POCKET 5: охлаждение L1 ≈17 ч, L4 ≈7,5 ч, L5 ≈4 ч; масса модуля ≈116 г, с шейной дугой ≈153 г; диапазон 5–40 °C. https://www.sony.co.uk/electronics/reonpocket5
+- **[N9]** Sony HK, пресс-релиз 23.04.2024: отвод тепла до 1,5× к RNP-4, время работы до 1,8×, цена HK$1 499. https://www.sony.com.hk/press/pdf/20240423_e.pdf
+- **[N10]** Sony Singapore, REON POCKET PRO: два термомодуля (≈2× площадь), вентилятор ≈2× потока, до 2× отвода тепла; охлаждение L1 ≈34 ч, L5 ≈5,5 ч; масса 194 г; S$309. https://store.sony.com.sg/products/reon-pocket-pro
+- **[N11]** Tom's Hardware, 01.12.2022: Frore AirJet — пьезомембраны на ультразвуковой частоте прокачивают воздух. AirJet Mini: отводит 5,25 Вт при 85 °C кристалла, потребляет ≤1 Вт, 2,8 мм, 11 г, 21 дБА. https://www.tomshardware.com/news/ultrasonic-solild-state-cooling-system
+- **[N12]** UCLA Samueli, 06.01.2025: электрокалорический полимерный насос тепла, Science, doi 10.1126/science.adr2268: −16 °F (≈ −9 °C) окружения, до −25 °F (≈ −14 °C) у источника за ≈30 с; стопка из 6 плёнок ≈2,5 см. https://samueli.ucla.edu/new-cooling-pump-drops-temperatures-by-16-degrees-more-at-source-of-heat/
+- **[N13]** LBNL, 29.04.2025: материал P(VDF-TrFE-CFE), без хладагента, патент в процессе, назначение — носимое и локальное охлаждение. https://newscenter.lbl.gov/2025/04/29/researchers-pioneer-heat-pumping-material-for-localized-cooling/
+
+## Материалы
+
+- **[N25]** Zhejiang University, 04.02.2024: Wu M. и др. *Biomimetic, knittable aerogel fiber for thermal insulation textile*, Science (декабрь 2023). При −20 °C свитер из волокна так же тёпл, как пуховик, при толщине в 3–5 раз меньше; растягивается вдвое; стирается и красится. Лабораторный масштаб. https://www.zju.edu.cn/english/2024/0204/c19573a2877394/page.htm
+- **[N26]** Chemistry World: та же работа, «тепло как пуховик при пятой части толщины». https://chemistryworld.com/news/polar-bear-inspired-material-could-be-the-future-of-insulating-textiles/4018816.article
+- **[N27]** Zhu L., Zhu M. *Natl. Sci. Rev.* 2021;8:nwab176 — комментарий к Zeng S. и др., Science 373:692 (2021), метаткань радиационного охлаждения: отражение солнца 92,4 %, излучение в ИК ≈94,5 %, тело ≈3 °C прохладнее, чем под белым хлопком; выпуск десятками м². https://pmc.ncbi.nlm.nih.gov/articles/PMC8692931/
+- **[N28]** University of Maryland, 07.02.2019: Zhang X.A. и др. *Dynamic gating of infrared radiation in a textile*, Science 2019 — пряжа сама меняет пористость и ИК-связь от влажности пота; стирается и красится; до коммерции нужна работа. https://cmns.umd.edu/news-events/news/scientists-develop-first-fabric-automatically-cool-or-insulate-depending
+- **[N29]** Textile World, 09.12.2021: Columbia Omni-Heat Infinity — 50–60 % покрытия подкладки алюминиевыми точками (прошлое поколение ≈30 %); выше ≈65 % резко падает паропроницаемость. https://www.textileworld.com/textile-world/quality-fabric-of-the-month/2021/12/quality-fabric-of-the-month-omni-heat-infinity-gold-beats-cold/
+- **[N30]** Cyclingnews, 06.12.2023: переход на мембраны без PFAS (Gore ePE с сезона О/З 2024 у Rapha), альтернативы Pertex, Polartec NeoShell, Sympatex; главная трудность — водоотталкивающая пропитка без PFAS. https://www.cyclingnews.com/features/the-future-of-waterproof-clothing-one-year-closer-to-the-pfas-ban
+- **[N31]** Just Style, 17.04.2024: Spiber привлекла ¥10 млрд ($64,7 млн) на масштабирование «Brewed Protein»; 15 брендов выпустили продукты. https://www.just-style.com/news/spiber-inc-snags-¥10bn-to-accelerate-mass-production-of-eco-fibres
+- **[N32]** MIT News, 26.10.2023: FibeRobo — волокно из жидкокристаллического эластомера, сокращается до 40 % (безопасная для кожи версия ≈25 %) при нагреве, ≈$0,20 за метр, ≈1 км в день; концепт куртки, которая становится теплее. ACM UIST 2023. https://news.mit.edu/2023/shape-shifting-fiber-can-produce-morphing-fabrics-1026
+- **[N33]** NASA Spinoff, 2022: фазовые материалы Outlast выросли из контракта NASA 1980-х на перчатки скафандра. https://spinoff.nasa.gov/Feeling-Hot-Staying-Cool
+- **[N34]** *A kirigami-enabled electrochromic wearable variable-emittance device for energy-efficient adaptive personal thermoregulation* (2023, запись NSF PAR; полный текст не прочитан, цифры не используем). https://par.nsf.gov/biblio/10483492
+
+## Уход за одеждой и умная вешалка
+
+- **[N17]** LG US, Styler S5MSB: $2 499, снят с производства; сертификат Asthma & Allergy Friendly. https://www.lg.com/us/styler/lg-s5msb-styler
+- **[N18]** Samsung India, 21.11.2025: Bespoke AirDresser — Dual AirWash (пыль, «99 % запахов»), Dual JetSteam («до 99,9 % вирусов и бактерий», заявление компании), цена ₹156 990. https://news.samsung.com/in/samsung-unveils-next-gen-bespoke-airdresser-featuring-dual-airwash-dual-jetsteam-for-smarter-hygienic-clothing-care
+- **[N19]** Panasonic, вешалка MS-DH210 с nanoe X: дезодорирует одежду на вешалке, режимы ≈5 и ≈7 ч, чехол в комплекте. https://panasonic.jp/deodorizer/products/MS-DH210.html (мощность ≈4,5 Вт и масса ≈700 г — из неполного чтения страницы, **[сверить]**)
+- **[N20]** GORE-TEX, уход за верхней одеждой: стирка 40 °C; для восстановления водоотталкивающей пропитки — 20 мин тёплой щадящей сушки в барабане или утюг на слабом нагреве **без пара**. https://www.gore-tex.com/support/care/outerwear
+- **[N21]** 21 CFR 801.415 (США): устройства, дающие озон выше 0,05 ppm в помещении, считаются небезопасными; промышленный 8-часовой предел 0,10 ppm. https://www.law.cornell.edu/cfr/text/21/801.415
+- **[N22]** California Air Resources Board: лимит для очистителей воздуха 0,050 ppm (AB 2276); озон разрушает резину и эластомеры, обесцвечивает часть красителей; для действия на бактерии и грибы нужно ≥5 ppm. https://ww2.arb.ca.gov/resources/fact-sheets/ozone-emissions-consumer-products-study
+- **[N23]** Suh и др., 2025, скоупинг-обзор влияния УФ-С на материалы (ASHE 5(1):e199): выцветание тканей (синие и зелёные красители сильнее), падение прочности хлопка и полиэстера при больших дозах. https://pmc.ncbi.nlm.nih.gov/articles/PMC12415791/
+- **[N24]** Wireless Power Consortium, 23.07.2025: Qi2 25W (Qi v2.2.1), 25 Вт, магнитное позиционирование; исходный Qi2 — 15 Вт (11.2023). https://www.wirelesspowerconsortium.com/media/wvsmia32/qi2-25w-news-release-v72.pdf
+- **[N36]** Homecrux, 04.07.2017: Panasonic MS-DH100 (прошлая модель вешалки nanoe X), ≈$162 на Amazon на момент публикации. https://www.homecrux.com/panasonic-ms-dh100-hanger-deodorizes-clothes-with-nano-water-particles/73537/
