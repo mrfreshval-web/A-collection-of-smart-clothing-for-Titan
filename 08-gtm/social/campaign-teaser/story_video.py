@@ -16,8 +16,9 @@ SCENES = [  # (фото, строки, индекс акцентной стро�
     (2, ["МИНУС 25.", "ТЕБЕ ТЕПЛО."], 1, AMBER, "SMART CASUAL"),
     (3, ["ЗАБУДЬ О ХОЛОДЕ.", "ДУМАЙ О ЦЕЛИ."], 1, AMBER, None),
     (4, ["КЛАССИКА СНАРУЖИ.", "КЛИМАТ ВНУТРИ."], 1, AMBER, None),
+    (5, ["НА ПРЕДЕЛЕ.", "В СВОЕЙ ЗОНЕ."], 1, (255, 92, 64), "SPORT"),
 ]
-SCENE_LEN = 2.6  # с
+SCENE_LEN = 2.3  # с
 FINAL_LEN = 15.0 - SCENE_LEN * len(SCENES)
 XFADE = 0.25
 
@@ -37,13 +38,13 @@ def prep(photo, n):
     return im
 
 
-def kenburns(im, t):
+def kenburns(im, t, fy=0.45):
     """Медленный наезд: масштаб 1.12 → 1.0 от размера кадра."""
     z = 1.0 + 0.12 * (1 - ease(t * 0.9))
     cw, ch = int(W * z), int(H * z)
     bw, bh = im.size
     x = (bw - cw) // 2
-    y = int((bh - ch) * 0.45)
+    y = int((bh - ch) * fy)
     return im.crop((x, y, x + cw, y + ch)).resize((W, H), Image.BILINEAR)
 
 
@@ -139,7 +140,7 @@ def main():
 
     def scene_frame(i, ts):
         n, lines, acc, col, tag = SCENES[i]
-        fr = kenburns(bases[i], ts / SCENE_LEN).convert("RGBA")
+        fr = kenburns(bases[i], ts / SCENE_LEN, 0.0 if n == 5 else 0.45).convert("RGBA")
         fr.alpha_composite(grad)
         fr.alpha_composite(text_layer(lines, acc, col, tag, ts))
         fr.alpha_composite(logo_layer(1.0))

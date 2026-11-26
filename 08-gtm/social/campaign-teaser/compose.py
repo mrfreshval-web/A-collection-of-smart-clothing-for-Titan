@@ -24,7 +24,10 @@ SLIDES = [
          sub="Комфорт тела теперь забота одежды.", cta=None, swipe=True, fy=0.25),
     dict(n=4, tag="SMART CASUAL", head=["КЛАССИКА СНАРУЖИ.", "ТВОЙ КЛИМАТ ВНУТРИ."], accent=1,
          sub="Стиль без компромиссов.", cta=None, swipe=True, fy=0.2),
-    dict(n=5, tag="ЭКОСИСТЕМА «ЗДОРОВЬЕ ТИТАНА»", head=["ОДЕЖДА,", "КОТОРАЯ ДУМАЕТ", "О ТЕЛЕ."], accent=2,
+    dict(n=5, tag="SPORT", head=["НА ПРЕДЕЛЕ.", "В СВОЕЙ ЗОНЕ."], accent=1,
+         sub="Тренируйся. Остальное она возьмёт на себя.", cta=None, swipe=True, fy=0.15,
+         accent_col=(255, 92, 64)),
+    dict(n=6, tag="ЭКОСИСТЕМА «ЗДОРОВЬЕ ТИТАНА»", head=["ОДЕЖДА,", "КОТОРАЯ ДУМАЕТ", "О ТЕЛЕ."], accent=2,
          sub="Smart Casual · Sport · Function", cta="СКОРО. ПОДПИШИСЬ ПЕРВЫМ", swipe=False, dark=True),
 ]
 
