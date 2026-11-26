@@ -27,7 +27,10 @@ SLIDES = [
     dict(n=5, tag="SPORT", head=["НА ПРЕДЕЛЕ.", "В СВОЕЙ ЗОНЕ."], accent=1,
          sub="Тренируйся. Остальное она возьмёт на себя.", cta=None, swipe=True, fy=0.15,
          accent_col=(255, 92, 64)),
-    dict(n=6, tag="ЭКОСИСТЕМА «ЗДОРОВЬЕ ТИТАНА»", head=["ОДЕЖДА,", "КОТОРАЯ ДУМАЕТ", "О ТЕЛЕ."], accent=2,
+    dict(n=6, tag="FUNCTION", head=["ГОРЫ НЕ ПРОЩАЮТ.", "ТИТАН ГОТОВ."], accent=1,
+         sub="Для лыж, сноуборда и высоты.", cta=None, swipe=True, fy=0.2,
+         accent_col=(150, 205, 255)),
+    dict(n=7, tag="ЭКОСИСТЕМА «ЗДОРОВЬЕ ТИТАНА»", head=["ОДЕЖДА,", "КОТОРАЯ ДУМАЕТ", "О ТЕЛЕ."], accent=2,
          sub="Smart Casual · Sport · Function", cta="СКОРО. ПОДПИШИСЬ ПЕРВЫМ", swipe=False, dark=True),
 ]
 

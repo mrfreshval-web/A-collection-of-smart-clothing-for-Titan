@@ -17,8 +17,9 @@ SCENES = [  # (фото, строки, индекс акцентной стро�
     (3, ["ЗАБУДЬ О ХОЛОДЕ.", "ДУМАЙ О ЦЕЛИ."], 1, AMBER, None),
     (4, ["КЛАССИКА СНАРУЖИ.", "КЛИМАТ ВНУТРИ."], 1, AMBER, None),
     (5, ["НА ПРЕДЕЛЕ.", "В СВОЕЙ ЗОНЕ."], 1, (255, 92, 64), "SPORT"),
+    (6, ["ГОРЫ НЕ ПРОЩАЮТ.", "ТИТАН ГОТОВ."], 1, (150, 205, 255), "FUNCTION"),
 ]
-SCENE_LEN = 2.3  # с
+SCENE_LEN = 2.0  # с
 FINAL_LEN = 15.0 - SCENE_LEN * len(SCENES)
 XFADE = 0.25
 
@@ -140,7 +141,7 @@ def main():
 
     def scene_frame(i, ts):
         n, lines, acc, col, tag = SCENES[i]
-        fr = kenburns(bases[i], ts / SCENE_LEN, 0.0 if n == 5 else 0.45).convert("RGBA")
+        fr = kenburns(bases[i], ts / SCENE_LEN, 0.0 if n in (5, 6) else 0.45).convert("RGBA")
         fr.alpha_composite(grad)
         fr.alpha_composite(text_layer(lines, acc, col, tag, ts))
         fr.alpha_composite(logo_layer(1.0))
