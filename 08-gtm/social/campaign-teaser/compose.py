@@ -17,15 +17,15 @@ AMBER = (240, 168, 92)
 
 SLIDES = [
     dict(n=1, tag="СКОРО", head=["ТВОЙ КЛИМАТ.", "ВЕЗДЕ."], accent=1,
-         sub="Одежда, которая думает о теле.", cta=None, swipe=True),
+         sub="Одежда, которая думает о теле.", cta=None, swipe=True, fy=0.3),
     dict(n=2, tag="SMART CASUAL", head=["МИНУС 25.", "ТЕБЕ ТЕПЛО."], accent=1,
-         sub="Городская одежда, которая сама держит комфорт.", cta=None, swipe=True),
-    dict(n=3, tag="SPORT", head=["НА ПРЕДЕЛЕ.", "В СВОЕЙ ЗОНЕ."], accent=1,
-         sub="Тренируйся. Остальное она возьмёт на себя.", cta=None, swipe=True, accent_col=(255, 92, 64)),
-    dict(n=4, tag="FUNCTION", head=["ГОРЫ НЕ ПРОЩАЮТ.", "ТИТАН ГОТОВ."], accent=1,
-         sub="Для лыж, сноуборда и высоты.", cta=None, swipe=True, accent_col=(150, 205, 255)),
+         sub="Город, мороз, ветер. Тебе комфортно.", cta=None, swipe=True, fy=0.2),
+    dict(n=3, tag="SMART CASUAL", head=["ЗАБУДЬ О ХОЛОДЕ.", "ДУМАЙ О ЦЕЛИ."], accent=1,
+         sub="Комфорт тела теперь забота одежды.", cta=None, swipe=True, fy=0.25),
+    dict(n=4, tag="SMART CASUAL", head=["КЛАССИКА СНАРУЖИ.", "ТВОЙ КЛИМАТ ВНУТРИ."], accent=1,
+         sub="Стиль без компромиссов.", cta=None, swipe=True, fy=0.2),
     dict(n=5, tag="ЭКОСИСТЕМА «ЗДОРОВЬЕ ТИТАНА»", head=["ОДЕЖДА,", "КОТОРАЯ ДУМАЕТ", "О ТЕЛЕ."], accent=2,
-         sub="Smart Casual · Sport · Function", cta="СКОРО. ПОДПИШИСЬ ПЕРВЫМ", swipe=False),
+         sub="Smart Casual · Sport · Function", cta="СКОРО. ПОДПИШИСЬ ПЕРВЫМ", swipe=False, dark=True),
 ]
 
 
@@ -39,6 +39,24 @@ def find_photo(folder, stem):
         if os.path.exists(p):
             return p
     return None
+
+
+WATERMARK_TRIM = 0.07  # доля кадра снизу, которую срезаем (подпись автора фото)
+
+
+def load_photo(path):
+    im = ImageOps.exif_transpose(Image.open(path)).convert("RGB")
+    w, h = im.size
+    return im.crop((0, 0, w, int(h * (1 - WATERMARK_TRIM))))
+
+
+def dark_bg(W, H):
+    """Тёмный фон с тёплым свечением для финального кадра."""
+    y, x = np.mgrid[0:H, 0:W].astype(np.float32)
+    r = np.sqrt(((x - W / 2) / W) ** 2 + ((y - H * 0.32) / H) ** 2)
+    g = np.clip(0.55 - r, 0, 1) ** 2 * 0.55
+    a = 0.03 + g[..., None] * np.array([0.94, 0.62, 0.32])[None, None, :]
+    return Image.fromarray((np.clip(a, 0, 1) * 255).astype(np.uint8))
 
 
 def cover_crop(img, W, H, fy=0.4):
@@ -112,8 +130,10 @@ def fit_size(lines, fontname, max_w, start):
 def compose(photo, cfg, W, H, site, story=False):
     S = 2  # рендер в 2x для чистых краёв
     w, h = W * S, H * S
-    if photo:
-        img = cover_crop(ImageOps.exif_transpose(Image.open(photo)).convert("RGB"), w, h, cfg.get("fy", 0.35))
+    if cfg.get("dark"):
+        img = dark_bg(w, h)
+    elif photo:
+        img = cover_crop(load_photo(photo), w, h, cfg.get("fy", 0.35))
         img = grade(img)
     else:
         img = placeholder(w, h, cfg["n"])

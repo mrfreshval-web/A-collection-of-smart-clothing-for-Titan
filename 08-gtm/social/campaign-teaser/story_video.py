@@ -7,15 +7,15 @@
 import os, sys, argparse, subprocess
 import numpy as np
 from PIL import Image, ImageDraw, ImageOps
-from compose import F, find_photo, cover_crop, grade, placeholder, gradients, tracked, WHITE, DIM, AMBER
+from compose import F, find_photo, load_photo, cover_crop, grade, placeholder, gradients, tracked, WHITE, DIM, AMBER
 
 W, H, FPS = 1080, 1920, 30
 
 SCENES = [  # (фото, строки, индекс акцентной строки, цвет акцента, метка)
     (1, ["ТВОЙ", "КЛИМАТ."], 1, AMBER, None),
     (2, ["МИНУС 25.", "ТЕБЕ ТЕПЛО."], 1, AMBER, "SMART CASUAL"),
-    (3, ["НА ПРЕДЕЛЕ.", "В СВОЕЙ ЗОНЕ."], 1, (255, 92, 64), "SPORT"),
-    (4, ["ГОРЫ", "НЕ ПРОЩАЮТ."], 1, (150, 205, 255), "FUNCTION"),
+    (3, ["ЗАБУДЬ О ХОЛОДЕ.", "ДУМАЙ О ЦЕЛИ."], 1, AMBER, None),
+    (4, ["КЛАССИКА СНАРУЖИ.", "КЛИМАТ ВНУТРИ."], 1, AMBER, None),
 ]
 SCENE_LEN = 2.6  # с
 FINAL_LEN = 15.0 - SCENE_LEN * len(SCENES)
@@ -31,7 +31,7 @@ def prep(photo, n):
     """Кадр сцены с запасом 12% под наезд камеры."""
     bw, bh = int(W * 1.12), int(H * 1.12)
     if photo:
-        im = grade(cover_crop(ImageOps.exif_transpose(Image.open(photo)).convert("RGB"), bw, bh, 0.35))
+        im = grade(cover_crop(load_photo(photo), bw, bh, 0.3))
     else:
         im = placeholder(bw, bh, n)
     return im
