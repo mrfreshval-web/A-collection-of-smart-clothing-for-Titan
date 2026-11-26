@@ -7,7 +7,7 @@
 import os, sys, argparse, subprocess
 import numpy as np
 from PIL import Image, ImageDraw, ImageOps
-from compose import F, find_photo, load_photo, cover_crop, grade, placeholder, gradients, tracked, WHITE, DIM, AMBER
+from compose import logo_mark, logo_hero, F, find_photo, load_photo, cover_crop, grade, placeholder, gradients, tracked, WHITE, DIM, AMBER
 
 W, H, FPS = 1080, 1920, 30
 
@@ -82,7 +82,9 @@ def text_layer(lines, accent, acc_col, tag, t):
 def logo_layer(alpha):
     L = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(L)
-    tracked(d, (72, 260), "ТИТАН", F("InterDisplay-Bold.otf", 44), WHITE + (int(255 * alpha),), 18, anchor="lt")
+    ms = 76
+    L.alpha_composite(logo_mark(ms), (68, 260 - int(ms * 0.3)))
+    tracked(d, (72 + ms * 1.08, 260), "ТИТАН", F("InterDisplay-Bold.otf", 44), WHITE + (int(255 * alpha),), 18, anchor="lt")
     return L
 
 
@@ -95,6 +97,13 @@ def final_frame(t, site):
     a = np.asarray(img).astype(np.float32) / 255
     a = a + glow[..., None] * np.array([0.94, 0.66, 0.36])[None, None, :]
     img = Image.fromarray((np.clip(a, 0, 1) * 255).astype(np.uint8)).convert("RGBA")
+    la = ease(t / 0.5)
+    if la > 0:
+        hs = int(440 * (0.92 + 0.08 * la))
+        hero = logo_hero(440).resize((hs, hs), Image.LANCZOS)
+        a_ = hero.getchannel("A").point(lambda p: int(p * la))
+        hero.putalpha(a_)
+        img.alpha_composite(hero, (int((W - hs) / 2), int(H * 0.215 - hs / 2)))
     d = ImageDraw.Draw(img)
     word = "ТИТАН"
     f = F("InterDisplay-Black.otf", 200)

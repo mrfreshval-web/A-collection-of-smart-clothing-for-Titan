@@ -65,6 +65,37 @@ def dark_bg(W, H):
     return Image.fromarray((np.clip(a, 0, 1) * 255).astype(np.uint8))
 
 
+ASSETS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "assets")
+_logo_cache = {}
+
+
+def logo_mark(size):
+    """Плоский линейный логотип на прозрачном фоне (альфа из яркости золотых линий)."""
+    key = ("line", size)
+    if key not in _logo_cache:
+        im = Image.open(os.path.join(ASSETS, "logo-line.jpg")).convert("RGB")
+        a = np.asarray(im).astype(np.float32) / 255
+        lum = a.max(-1)
+        alpha = np.clip((lum - 0.15) / 0.25, 0, 1)
+        gold = np.clip(a / np.maximum(lum[..., None], 1e-3), 0, 1)  # чистый оттенок золота
+        rgba = np.dstack([gold * 255, alpha * 255]).astype(np.uint8)
+        _logo_cache[key] = Image.fromarray(rgba, "RGBA").resize((size, size), Image.LANCZOS)
+    return _logo_cache[key]
+
+
+def logo_hero(size):
+    """Объёмный логотип в круге с мягким краем для тёмного фона."""
+    key = ("3d", size)
+    if key not in _logo_cache:
+        im = Image.open(os.path.join(ASSETS, "logo-3d.jpg")).convert("RGB").resize((size, size), Image.LANCZOS)
+        y, x = np.mgrid[0:size, 0:size].astype(np.float32)
+        r = np.sqrt((x - size / 2) ** 2 + (y - size / 2) ** 2) / (size / 2)
+        alpha = np.clip((1.0 - r) / 0.06, 0, 1)
+        im.putalpha(Image.fromarray((alpha * 255).astype(np.uint8)))
+        _logo_cache[key] = im
+    return _logo_cache[key]
+
+
 def cover_crop(img, W, H, fy=0.4):
     """Кадрирование «cover» с фокусом по вертикали fy (0 верх, 1 низ)."""
     iw, ih = img.size
@@ -152,7 +183,12 @@ def compose(photo, cfg, W, H, site, story=False):
     k = 1.35 if story else 1.0  # крупнее мелкий текст в сторис
 
     # логотип и метка линейки
-    tracked(d, (m, top_y), "ТИТАН", F("InterDisplay-Bold.otf", 34 * k * S), WHITE, 0.42 * 34 * k * S, anchor="lt")
+    ms = int(58 * k * S)  # знак логотипа рядом со словесным знаком
+    if cfg.get("dark") and not story:
+        hs = int(w * 0.44)
+        img.alpha_composite(logo_hero(hs), (int((w - hs) / 2), int(h * 0.29 - hs / 2)))
+    img.alpha_composite(logo_mark(ms), (int(m - ms * 0.06), int(top_y - ms * 0.3)))
+    tracked(d, (m + ms * 1.08, top_y), "ТИТАН", F("InterDisplay-Bold.otf", 34 * k * S), WHITE, 0.42 * 34 * k * S, anchor="lt")
     if not story:
         f_tag = F("Inter-Medium.otf", 17 * S)
         tw = tracked(ImageDraw.Draw(Image.new("L", (1, 1))), (0, 0), cfg["tag"], f_tag, 0, 0.16 * 17 * S)
