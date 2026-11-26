@@ -6,3 +6,4 @@ Thumbs.db
 *.gdoc
 *.gsheet
 *.gslides
+__pycache__/
