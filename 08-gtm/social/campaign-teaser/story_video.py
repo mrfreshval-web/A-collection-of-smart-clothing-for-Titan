@@ -122,7 +122,7 @@ def final_frame(t, site):
         d.rounded_rectangle([x0, y0, x0 + bw, y0 + bh], radius=bh // 2, fill=WHITE + (int(255 * s3),))
         tracked(d, (W / 2, y0 + bh / 2), cta, fc, (12, 12, 14, int(255 * s3)), 3, anchor="mm")
         if site:
-            tracked(d, (W / 2, y0 + bh + 70), site.upper(), F("Inter-Medium.otf", 32), DIM + (int(255 * s3),), 3, anchor="ms")
+            tracked(d, (W / 2, y0 + bh + 70), site, F("Inter-Medium.otf", 32), DIM + (int(255 * s3),), 3, anchor="ms")
     return img.convert("RGB")
 
 

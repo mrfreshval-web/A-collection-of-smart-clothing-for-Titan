@@ -174,7 +174,7 @@ def compose(photo, cfg, W, H, site, story=False):
     y = bottom
     if site and (cfg.get("cta") or story):
         f_site = F("Inter-Medium.otf", 22 * k * S)
-        tracked(d, (m, y), site.upper(), f_site, DIM, 0.08 * 22 * k * S, anchor="ls")
+        tracked(d, (m, y), site, f_site, DIM, 0.08 * 22 * k * S, anchor="ls")
         y -= 46 * S
     if cfg.get("cta") or story:
         cta = cfg.get("cta") or "СКОРО. ПОДПИШИСЬ ПЕРВЫМ"
