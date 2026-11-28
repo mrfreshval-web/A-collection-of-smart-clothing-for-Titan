@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1380 900" width="1380" height="900">
+<defs><pattern id="hatch-7FB8EE" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="8" stroke="#7FB8EE" stroke-width="3" opacity="0.7"/></pattern><pattern id="hatch-5E2A33" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="8" stroke="#5E2A33" stroke-width="3" opacity="0.7"/></pattern></defs>
+<rect width="1380" height="900" fill="#0C0F13"/>
+<text x="40" y="52" font-family="Geist Mono, ui-monospace, monospace" font-size="15" letter-spacing="4" fill="#8F8A84">ТИТАН · 05-DESIGN · СХЕМА ЗОН</text>
+<text x="40" y="90" font-family="Inter, Helvetica, Arial, sans-serif" font-size="30" fill="#ECE7DF">Smart Casual · SC-1 жилет + SC-2 пуховик</text>
+<text x="40" y="118" font-family="Geist Mono, ui-monospace, monospace" font-size="13" fill="#8F8A84">Город, −25…+15 °C. Торс выше пальцев [Sci: Brajkovic1998]; пот — центр спины [D1]</text>
+<text x="250" y="160" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="13" letter-spacing="3" fill="#8F8A84">СПЕРЕДИ</text>
+<text x="690" y="160" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="13" letter-spacing="3" fill="#8F8A84">СЗАДИ</text>
+<ellipse cx="250" cy="213" rx="30" ry="38" fill="#14181E" stroke="#2A3038" stroke-width="2"/>
+<path d="M155,269 Q150,259 190,253 L310,253 Q350,259 345,269 L335,559 L165,559 Z" fill="#14181E" stroke="#2A3038" stroke-width="2"/>
+<path d="M155,269 L115,299 L93,549 L125,554 L147,349 Z" fill="#14181E" stroke="#2A3038" stroke-width="2"/>
+<ellipse cx="109" cy="574" rx="17" ry="24" fill="#14181E" stroke="#2A3038" stroke-width="2"/>
+<path d="M345,269 L385,299 L407,549 L375,554 L353,349 Z" fill="#14181E" stroke="#2A3038" stroke-width="2"/>
+<ellipse cx="391" cy="574" rx="17" ry="24" fill="#14181E" stroke="#2A3038" stroke-width="2"/>
+<path d="M165,559 L170,819 L230,819 L244,559 Z" fill="#101318" stroke="#2A3038" stroke-width="2"/>
+<rect x="170" y="819" width="60" height="22" rx="8" fill="#101318" stroke="#2A3038" stroke-width="2"/>
+<path d="M335,559 L330,819 L270,819 L256,559 Z" fill="#101318" stroke="#2A3038" stroke-width="2"/>
+<rect x="270" y="819" width="60" height="22" rx="8" fill="#101318" stroke="#2A3038" stroke-width="2"/>
+<line x1="250" y1="253" x2="250" y2="559" stroke="#2A3038" stroke-dasharray="4 6"/>
+<ellipse cx="690" cy="213" rx="30" ry="38" fill="#14181E" stroke="#2A3038" stroke-width="2"/>
+<path d="M595,269 Q590,259 630,253 L750,253 Q790,259 785,269 L775,559 L605,559 Z" fill="#14181E" stroke="#2A3038" stroke-width="2"/>
+<path d="M595,269 L555,299 L533,549 L565,554 L587,349 Z" fill="#14181E" stroke="#2A3038" stroke-width="2"/>
+<ellipse cx="549" cy="574" rx="17" ry="24" fill="#14181E" stroke="#2A3038" stroke-width="2"/>
+<path d="M785,269 L825,299 L847,549 L815,554 L793,349 Z" fill="#14181E" stroke="#2A3038" stroke-width="2"/>
+<ellipse cx="831" cy="574" rx="17" ry="24" fill="#14181E" stroke="#2A3038" stroke-width="2"/>
+<path d="M605,559 L610,819 L670,819 L684,559 Z" fill="#101318" stroke="#2A3038" stroke-width="2"/>
+<rect x="610" y="819" width="60" height="22" rx="8" fill="#101318" stroke="#2A3038" stroke-width="2"/>
+<path d="M775,559 L770,819 L710,819 L696,559 Z" fill="#101318" stroke="#2A3038" stroke-width="2"/>
+<rect x="710" y="819" width="60" height="22" rx="8" fill="#101318" stroke="#2A3038" stroke-width="2"/>
+<line x1="690" y1="253" x2="690" y2="559" stroke="#2A3038" stroke-dasharray="4 6"/>
+<rect x="172" y="299" width="56" height="60" rx="8" fill="#E9A25C" fill-opacity="0.38" stroke="#E9A25C" stroke-width="2"/><text x="200.0" y="334.0" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="14" fill="#ECE7DF">H3</text>
+<rect x="272" y="299" width="56" height="60" rx="8" fill="#E9A25C" fill-opacity="0.38" stroke="#E9A25C" stroke-width="2"/><text x="300.0" y="334.0" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="14" fill="#ECE7DF">H4</text>
+<rect x="168" y="464" width="60" height="62" rx="8" fill="#E9A25C" fill-opacity="0.38" stroke="#E9A25C" stroke-width="2"/><text x="198.0" y="500.0" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="14" fill="#ECE7DF">H5</text>
+<rect x="272" y="464" width="60" height="62" rx="8" fill="#E9A25C" fill-opacity="0.38" stroke="#E9A25C" stroke-width="2"/><text x="302.0" y="500.0" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="14" fill="#ECE7DF">H6</text>
+<rect x="220" y="255" width="60" height="14" rx="6" fill="#E9A25C" fill-opacity="0.38" stroke="#E9A25C" stroke-width="2"/><text x="250.0" y="267.0" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="14" fill="#ECE7DF">H7</text>
+<rect x="230" y="299" width="14" height="60" rx="4" fill="url(#hatch-7FB8EE)" stroke="#7FB8EE" stroke-width="2"/><text x="237.0" y="334.0" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="14" fill="#ECE7DF"></text>
+<rect x="256" y="299" width="14" height="60" rx="4" fill="url(#hatch-7FB8EE)" stroke="#7FB8EE" stroke-width="2"/><text x="263.0" y="334.0" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="14" fill="#ECE7DF"></text>
+<text x="250" y="379" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="13" fill="#ECE7DF">V5</text>
+<circle cx="308" cy="434" r="13" fill="#F3C48C" fill-opacity="0.85" stroke="#F3C48C" stroke-width="2"/><text x="308" y="413" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="13" fill="#ECE7DF">ПОРТ (внутри)</text>
+<circle cx="300" cy="394" r="9" fill="#ECE7DF" fill-opacity="0.85" stroke="#ECE7DF" stroke-width="2"/><text x="300" y="377" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="13" fill="#ECE7DF">КОРОНА</text>
+<rect x="610" y="279" width="160" height="28" rx="8" fill="url(#hatch-7FB8EE)" stroke="#7FB8EE" stroke-width="2"/><text x="690.0" y="298.0" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="14" fill="#ECE7DF">V1</text>
+<rect x="618" y="321" width="62" height="80" rx="8" fill="#E9A25C" fill-opacity="0.38" stroke="#E9A25C" stroke-width="2"/><text x="649.0" y="366.0" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="14" fill="#ECE7DF">H1</text>
+<rect x="700" y="321" width="62" height="80" rx="8" fill="#E9A25C" fill-opacity="0.38" stroke="#E9A25C" stroke-width="2"/><text x="731.0" y="366.0" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="14" fill="#ECE7DF">H1</text>
+<rect x="612" y="459" width="66" height="46" rx="8" fill="#E9A25C" fill-opacity="0.38" stroke="#E9A25C" stroke-width="2"/><text x="645.0" y="487.0" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="14" fill="#ECE7DF">H2</text>
+<rect x="702" y="459" width="66" height="46" rx="8" fill="#E9A25C" fill-opacity="0.38" stroke="#E9A25C" stroke-width="2"/><text x="735.0" y="487.0" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="14" fill="#ECE7DF">H2</text>
+<text x="690" y="549" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="12" fill="#8F8A84">позвоночник ±2 см свободен</text>
+<rect x="920" y="135" width="26" height="18" rx="4" fill="#E9A25C" fill-opacity="0.38" stroke="#E9A25C" stroke-width="2"/><text x="958" y="150" font-family="Geist Mono, ui-monospace, monospace" font-size="13" fill="#ECE7DF">Подогрев H1–H7</text><text x="958" y="168" font-family="Geist Mono, ui-monospace, monospace" font-size="13" fill="#8F8A84">предел на коже 42 °C</text><rect x="920" y="183" width="26" height="18" rx="4" fill="url(#hatch-7FB8EE)" stroke="#7FB8EE"/><text x="958" y="198" font-family="Geist Mono, ui-monospace, monospace" font-size="13" fill="#ECE7DF">Вентиляция V1, V5</text><text x="958" y="216" font-family="Geist Mono, ui-monospace, monospace" font-size="13" fill="#8F8A84">открывается одной рукой</text><circle cx="932" cy="241" r="9" fill="#F3C48C"/><text x="958" y="246" font-family="Geist Mono, ui-monospace, monospace" font-size="13" fill="#ECE7DF">Порт: Связка Ядро Lite + Тепло</text><text x="958" y="264" font-family="Geist Mono, ui-monospace, monospace" font-size="13" fill="#8F8A84">внутренний карман, талия слева</text><circle cx="932" cy="289" r="9" fill="#ECE7DF"/><text x="958" y="294" font-family="Geist Mono, ui-monospace, monospace" font-size="13" fill="#ECE7DF">Корона: одна кнопка</text><text x="958" y="312" font-family="Geist Mono, ui-monospace, monospace" font-size="13" fill="#8F8A84">левая полочка, под планкой</text><rect x="920" y="327" width="26" height="18" rx="4" fill="#8F8A84" fill-opacity="0.38" stroke="#8F8A84" stroke-width="2"/><text x="958" y="342" font-family="Geist Mono, ui-monospace, monospace" font-size="13" fill="#ECE7DF">SC-1 жилет = климат-подклад</text><text x="958" y="360" font-family="Geist Mono, ui-monospace, monospace" font-size="13" fill="#8F8A84">H1–H4 живут на нём</text>
+<text x="40" y="876" font-family="Geist Mono, ui-monospace, monospace" font-size="12" fill="#8F8A84">Вид спереди: левая сторона человека — справа на рисунке. Схема условная, не лекало. Коды зон и источники: 05-design/02-platform-construction.md. Версия 0.1 · 28.11.2026</text>
+</svg>

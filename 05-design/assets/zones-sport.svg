@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1380 900" width="1380" height="900">
+<defs><pattern id="hatch-7FB8EE" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="8" stroke="#7FB8EE" stroke-width="3" opacity="0.7"/></pattern><pattern id="hatch-5E2A33" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="8" stroke="#5E2A33" stroke-width="3" opacity="0.7"/></pattern></defs>
+<rect width="1380" height="900" fill="#0C0F13"/>
+<text x="40" y="52" font-family="Geist Mono, ui-monospace, monospace" font-size="15" letter-spacing="4" fill="#8F8A84">ТИТАН · 05-DESIGN · СХЕМА ЗОН</text>
+<text x="40" y="90" font-family="Inter, Helvetica, Arial, sans-serif" font-size="30" fill="#ECE7DF">Sport · SP-1 топ / SP-2 бра (база)</text>
+<text x="40" y="118" font-family="Geist Mono, ui-monospace, monospace" font-size="13" fill="#8F8A84">Кроссфит и HYROX. Цвет зоны по умолчанию выключен — приватность</text>
+<text x="250" y="160" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="13" letter-spacing="3" fill="#8F8A84">СПЕРЕДИ</text>
+<text x="690" y="160" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="13" letter-spacing="3" fill="#8F8A84">СЗАДИ</text>
+<ellipse cx="250" cy="213" rx="30" ry="38" fill="#14181E" stroke="#2A3038" stroke-width="2"/>
+<path d="M155,269 Q150,259 190,253 L310,253 Q350,259 345,269 L335,559 L165,559 Z" fill="#14181E" stroke="#2A3038" stroke-width="2"/>
+<path d="M155,269 L115,299 L93,549 L125,554 L147,349 Z" fill="#14181E" stroke="#2A3038" stroke-width="2"/>
+<ellipse cx="109" cy="574" rx="17" ry="24" fill="#14181E" stroke="#2A3038" stroke-width="2"/>
+<path d="M345,269 L385,299 L407,549 L375,554 L353,349 Z" fill="#14181E" stroke="#2A3038" stroke-width="2"/>
+<ellipse cx="391" cy="574" rx="17" ry="24" fill="#14181E" stroke="#2A3038" stroke-width="2"/>
+<path d="M165,559 L170,819 L230,819 L244,559 Z" fill="#101318" stroke="#2A3038" stroke-width="2"/>
+<rect x="170" y="819" width="60" height="22" rx="8" fill="#101318" stroke="#2A3038" stroke-width="2"/>
+<path d="M335,559 L330,819 L270,819 L256,559 Z" fill="#101318" stroke="#2A3038" stroke-width="2"/>
+<rect x="270" y="819" width="60" height="22" rx="8" fill="#101318" stroke="#2A3038" stroke-width="2"/>
+<line x1="250" y1="253" x2="250" y2="559" stroke="#2A3038" stroke-dasharray="4 6"/>
+<ellipse cx="690" cy="213" rx="30" ry="38" fill="#14181E" stroke="#2A3038" stroke-width="2"/>
+<path d="M595,269 Q590,259 630,253 L750,253 Q790,259 785,269 L775,559 L605,559 Z" fill="#14181E" stroke="#2A3038" stroke-width="2"/>
+<path d="M595,269 L555,299 L533,549 L565,554 L587,349 Z" fill="#14181E" stroke="#2A3038" stroke-width="2"/>
+<ellipse cx="549" cy="574" rx="17" ry="24" fill="#14181E" stroke="#2A3038" stroke-width="2"/>
+<path d="M785,269 L825,299 L847,549 L815,554 L793,349 Z" fill="#14181E" stroke="#2A3038" stroke-width="2"/>
+<ellipse cx="831" cy="574" rx="17" ry="24" fill="#14181E" stroke="#2A3038" stroke-width="2"/>
+<path d="M605,559 L610,819 L670,819 L684,559 Z" fill="#101318" stroke="#2A3038" stroke-width="2"/>
+<rect x="610" y="819" width="60" height="22" rx="8" fill="#101318" stroke="#2A3038" stroke-width="2"/>
+<path d="M775,559 L770,819 L710,819 L696,559 Z" fill="#101318" stroke="#2A3038" stroke-width="2"/>
+<rect x="710" y="819" width="60" height="22" rx="8" fill="#101318" stroke="#2A3038" stroke-width="2"/>
+<line x1="690" y1="253" x2="690" y2="559" stroke="#2A3038" stroke-dasharray="4 6"/>
+<rect x="190" y="377" width="22" height="30" rx="5" fill="#B9CBD8" fill-opacity="0.38" stroke="#B9CBD8" stroke-width="2"/><text x="201.0" y="397.0" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="14" fill="#ECE7DF"></text>
+<rect x="240" y="377" width="22" height="30" rx="5" fill="#B9CBD8" fill-opacity="0.38" stroke="#B9CBD8" stroke-width="2"/><text x="251.0" y="397.0" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="14" fill="#ECE7DF"></text>
+<rect x="290" y="377" width="22" height="30" rx="5" fill="#B9CBD8" fill-opacity="0.38" stroke="#B9CBD8" stroke-width="2"/><text x="301.0" y="397.0" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="14" fill="#ECE7DF"></text>
+<text x="250" y="427" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="13" fill="#ECE7DF">ЭКГ под грудью</text>
+<path d="M228,299 L272,299 L250,359 Z" fill="url(#hatch-7FB8EE)" stroke="#7FB8EE" stroke-width="2"/>
+<text x="250" y="289" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="13" fill="#ECE7DF">V4 (Ж)</text>
+<circle cx="350" cy="444" r="13" fill="#F3C48C" fill-opacity="0.85" stroke="#F3C48C" stroke-width="2"/><text x="350" y="423" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="13" fill="#ECE7DF">ЯДРО</text>
+<line x1="225" y1="255" x2="160" y2="271" stroke="#FF5A3C" stroke-width="5" stroke-linecap="round" opacity="0.9"/>
+<line x1="275" y1="255" x2="340" y2="271" stroke="#FF5A3C" stroke-width="5" stroke-linecap="round" opacity="0.9"/>
+<circle cx="320" cy="289" r="6" fill="#FF5A3C" fill-opacity="0.85" stroke="#FF5A3C" stroke-width="2"/><text x="320" y="275" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="13" fill="#ECE7DF"></text>
+<text x="400" y="289" font-family="Geist Mono, ui-monospace, monospace" font-size="12" fill="#ECE7DF">индикатор атлета</text>
+<rect x="184" y="589" width="40" height="70" rx="8" fill="none" stroke="#B9CBD8" stroke-width="2" stroke-dasharray="6 5"/><text x="204.0" y="629.0" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="14" fill="#ECE7DF"></text>
+<rect x="276" y="589" width="40" height="70" rx="8" fill="none" stroke="#B9CBD8" stroke-width="2" stroke-dasharray="6 5"/><text x="296.0" y="629.0" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="14" fill="#ECE7DF"></text>
+<text x="250" y="689" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="12" fill="#8F8A84">ЭМГ SP-3 (бета)</text>
+<rect x="650" y="319" width="80" height="120" rx="8" fill="url(#hatch-7FB8EE)" stroke="#7FB8EE" stroke-width="2"/><text x="690.0" y="384.0" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="14" fill="#ECE7DF">V1</text>
+<rect x="630" y="479" width="120" height="50" rx="8" fill="url(#hatch-7FB8EE)" stroke="#7FB8EE" stroke-width="2"/><text x="690.0" y="509.0" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="14" fill="#ECE7DF">V2</text>
+<line x1="665" y1="255" x2="600" y2="271" stroke="#FF5A3C" stroke-width="5" stroke-linecap="round" opacity="0.9"/>
+<line x1="715" y1="255" x2="780" y2="271" stroke="#FF5A3C" stroke-width="5" stroke-linecap="round" opacity="0.9"/>
+<line x1="610" y1="297" x2="634" y2="297" stroke="#FF5A3C" stroke-width="6" stroke-linecap="round" opacity="0.95"/>
+<line x1="644" y1="297" x2="668" y2="297" stroke="#FF5A3C" stroke-width="6" stroke-linecap="round" opacity="0.95"/>
+<line x1="678" y1="297" x2="702" y2="297" stroke="#FF5A3C" stroke-width="6" stroke-linecap="round" opacity="0.95"/>
+<line x1="712" y1="297" x2="736" y2="297" stroke="#FF5A3C" stroke-width="6" stroke-linecap="round" opacity="0.3"/>
+<line x1="746" y1="297" x2="770" y2="297" stroke="#FF5A3C" stroke-width="6" stroke-linecap="round" opacity="0.3"/>
+<text x="690" y="317" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="12" fill="#ECE7DF">кокетка: 1–5 сегментов = зона</text>
+<rect x="920" y="135" width="26" height="18" rx="4" fill="#B9CBD8" fill-opacity="0.38" stroke="#B9CBD8" stroke-width="2"/><text x="958" y="150" font-family="Geist Mono, ui-monospace, monospace" font-size="13" fill="#ECE7DF">Электроды ЭКГ, 2–3 зоны</text><text x="958" y="168" font-family="Geist Mono, ui-monospace, monospace" font-size="13" fill="#8F8A84">раздельные лекала М/Ж</text><rect x="920" y="183" width="26" height="18" rx="4" fill="none" stroke="#B9CBD8" stroke-dasharray="4 3" stroke-width="2"/><text x="958" y="198" font-family="Geist Mono, ui-monospace, monospace" font-size="13" fill="#ECE7DF">Электроды ЭМГ в шортах — бета</text><rect x="920" y="213" width="26" height="18" rx="4" fill="url(#hatch-7FB8EE)" stroke="#7FB8EE"/><text x="958" y="228" font-family="Geist Mono, ui-monospace, monospace" font-size="13" fill="#ECE7DF">Сетка и перфорация V1, V2, V4</text><text x="958" y="246" font-family="Geist Mono, ui-monospace, monospace" font-size="13" fill="#8F8A84">по карте пота [D1][D2]</text><line x1="920" y1="271" x2="946" y2="271" stroke="#FF5A3C" stroke-width="5" stroke-linecap="round"/><text x="958" y="276" font-family="Geist Mono, ui-monospace, monospace" font-size="13" fill="#ECE7DF">Свет зоны: плечи и кокетка</text><text x="958" y="294" font-family="Geist Mono, ui-monospace, monospace" font-size="13" fill="#8F8A84">цвет + число сегментов [D8]</text><circle cx="932" cy="319" r="9" fill="#F3C48C"/><text x="958" y="324" font-family="Geist Mono, ui-monospace, monospace" font-size="13" fill="#ECE7DF">Ядро сбоку слева на рёбрах</text><text x="958" y="342" font-family="Geist Mono, ui-monospace, monospace" font-size="13" fill="#8F8A84">гипотеза, проверить в кроссфите</text>
+<text x="40" y="876" font-family="Geist Mono, ui-monospace, monospace" font-size="12" fill="#8F8A84">Вид спереди: левая сторона человека — справа на рисунке. Схема условная, не лекало. Коды зон и источники: 05-design/02-platform-construction.md. Версия 0.1 · 28.11.2026</text>
+</svg>
